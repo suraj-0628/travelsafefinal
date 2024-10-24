@@ -28,14 +28,15 @@ import getStarted from "@/assets/images/get-started.png";
 import message from "@/assets/images/message.png";
 import noResult from "@/assets/images/no-result.png";
 import onboarding1 from "@/assets/images/onboarding1.png";
-import onboarding2 from "@/assets/images/onboarding2.png";
+import onboarding2 from "@/assets/images/onboarding2.jpg";
 import onboarding3 from "@/assets/images/onboarding3.png";
+import onboard3 from "@/assets/images/onboard3.png"
 import signUpCar from "@/assets/images/signup-car.png";
 
 export const images = {
   onboarding1,
   onboarding2,
-  onboarding3,
+  onboard3,
   getStarted,
   signUpCar,
   check,
@@ -74,24 +75,24 @@ export const icons = {
 export const onboarding = [
   {
     id: 1,
-    title: "The perfect ride is just a tap away!",
+    title: "Wander Freely, Knowing Safety is Just a Tap Away!",
     description:
-      "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+      "Your journey begins with TravelSafe. ",
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Best car in your hands with Ryde",
+    title: "Empowering Women to Explore the World with Confidence!",
     description:
-      "Discover the convenience of finding your perfect ride with Ryde",
+      "Travel Smart, Travel Safe!",
     image: images.onboarding2,
   },
   {
     id: 3,
-    title: "Your ride, your way. Let's go!",
+    title: "Journey with Peace of Mind: Safety Tips at Your Fingertips!",
     description:
-      "Enter your destination, sit back, and let us take care of the rest.",
-    image: images.onboarding3,
+      "Navigate the World with Safety in Mind!",
+    image: images.onboard3,
   },
 ];
 
