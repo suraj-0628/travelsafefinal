@@ -2,6 +2,7 @@ import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowUp from "@/assets/icons/arrow-up.png";
 import backArrow from "@/assets/icons/back-arrow.png";
 import chat from "@/assets/icons/chat.png";
+import sos from "@/assets/icons/soss.png"
 import checkmark from "@/assets/icons/check.png";
 import close from "@/assets/icons/close.png";
 import dollar from "@/assets/icons/dollar.png";
@@ -70,6 +71,7 @@ export const icons = {
   star,
   target,
   to,
+  sos
 };
 
 export const onboarding = [
