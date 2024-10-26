@@ -20,6 +20,7 @@ import { icons, images } from "@/constants";
 import { useFetch } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { Ride } from "@/types/type";
+import Ratings from "@/components/Ratings";
 
 const Home = () => {
   const { user } = useUser();
@@ -88,13 +89,8 @@ const Home = () => {
           <View className="flex flex-col items-center justify-center">
             {!loading ? (
               <>
-                <Image
-                  source={images.noResult}
-                  className="w-40 h-40"
-                  alt="No recent rides found"
-                  resizeMode="contain"
-                />
-                <Text className="text-sm">No reviews found</Text>
+                <Ratings pointA="Kurumbapalayam" pointB="Gandhipuram" />
+                
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -131,7 +127,7 @@ const Home = () => {
             </>
 
             <Text className="text-xl font-JakartaBold mt-5 mb-3">
-              Reviews
+              Rate your Journey
             </Text>
           </>
         }

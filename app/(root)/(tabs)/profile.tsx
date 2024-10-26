@@ -60,6 +60,20 @@ const Profile = () => {
               inputStyle="p-3.5"
               editable={false}
             />
+             <InputField
+              label="Emergency Contact 1"
+              placeholder={user?.primaryPhoneNumber?.phoneNumber || "Not Found"}
+              containerStyle="w-full"
+              inputStyle="p-3.5"
+              editable={false}
+            />
+            <InputField
+              label="Emergency Contact 2"
+              placeholder={user?.primaryPhoneNumber?.phoneNumber || "Not Found"}
+              containerStyle="w-full"
+              inputStyle="p-3.5"
+              editable={false}
+            />
           </View>
         </View>
       </ScrollView>

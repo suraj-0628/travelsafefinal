@@ -6,6 +6,7 @@ import RideCard from "@/components/RideCard";
 import { images } from "@/constants";
 import { useFetch } from "@/lib/fetch";
 import { Ride } from "@/types/type";
+import BlogArticles from "@/components/BlogArticles";
 
 const Rides = () => {
   const { user } = useUser();
@@ -31,13 +32,8 @@ const Rides = () => {
           <View className="flex flex-col items-center justify-center">
             {!loading ? (
               <>
-                <Image
-                  source={images.noResult}
-                  className="w-40 h-40"
-                  alt="No History"
-                  resizeMode="contain"
-                />
-                <Text className="text-sm">No History</Text>
+                <BlogArticles />
+                <Text className="text-sm">...</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -46,7 +42,7 @@ const Rides = () => {
         )}
         ListHeaderComponent={
           <>
-            <Text className="text-2xl font-JakartaBold my-5">All History</Text>
+            <Text className="text-2xl font-JakartaBold my-5">Recent Articles & News</Text>
           </>
         }
       />
